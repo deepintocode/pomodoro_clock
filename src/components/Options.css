@@ -1,0 +1,10 @@
+#options {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#options i {
+    cursor: pointer;
+}
