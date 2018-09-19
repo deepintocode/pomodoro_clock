@@ -1,7 +1,8 @@
 import React from 'react';
+import './Buttons.css';
 
 const Buttons = ({ handleResetButton, handleStartButton }) => (
-    <div>
+    <div id="buttons">
       <p id="start_stop" onClick={ handleStartButton }>
         <i className="fas fa-play"></i>
         <i className="fas fa-pause"></i>
