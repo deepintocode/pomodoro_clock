@@ -58,7 +58,7 @@ class App extends Component {
     }
   }
   componentDidUpdate = () => {
-    if(this.state.sessionSeconds === 0) {
+    if(this.state.sessionSeconds < 0) {
       clearInterval(this.timerId);
       document.querySelector('#beep').play();     
       this.setState(state => {
@@ -72,7 +72,7 @@ class App extends Component {
       },
       1000);
     }
-    if(this.state.breakSeconds === 0) {
+    if(this.state.breakSeconds < 0) {
       clearInterval(this.timerId);
       document.querySelector('#beep').play();     
       this.setState(state => {
